@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;600;700&display=swap");
+@import "vars";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Red Rose", cursive;
+  background-color: #fff;
+}
+
+.leading-text {
+  font-size: clamp(30px, 5vw, 58px);
+  color: #434343;
+
+  span {
+    color: var(--brand);
+  }
+}
+
+.search-bar {
+  transition: all 1s ease;
+  border: 1px solid var(--light-gray);
+
+  &:has(> input:focus) {
+    transition: all 1s ease;
+    border: var(--brand) 1px solid;
+  }
+}
