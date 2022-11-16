@@ -22,7 +22,7 @@ function PlaceToStay() {
   return (
     <>
       <section className="py-28">
-        <div className="container flex items-center justify-between gap-6">
+        <div className="container flex flex-wrap items-center justify-between gap-6">
           <p>Resturant</p>
           <p>Cottage</p>
           <p>Castle</p>
@@ -40,7 +40,7 @@ function PlaceToStay() {
 
       {/* List of NFTs */}
       <section className="pb-28">
-        <div className="container grid grid-cols-4 gap-4">
+        <div className="container grid grid-cols-1 gap-4 md:grid-cols-4">
           {nftIDs.map((nft) => (
             <NftItem key={nft} img={nft} />
           ))}

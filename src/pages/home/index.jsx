@@ -3,7 +3,7 @@ import { NftItem } from "@components/NftItem";
 export default function Home() {
   return (
     <>
-      <header className="container grid h-[800px] grid-cols-2 gap-28 py-4">
+      <header className="container grid h-[800px] grid-cols-1 gap-28 py-4 md:grid-cols-2">
         <div className="flex flex-col justify-center">
           <h1 className="leading-text">
             Rent a <span>Place</span> away from <span>Home</span> in the{" "}
@@ -24,7 +24,7 @@ export default function Home() {
               id="search"
               placeholder="Search for location"
             />
-            <button className="block h-[54px] bg-brand px-16 text-white transition-all hover:bg-[#7c1f5f]">
+            <button className="block h-[54px] flex-shrink-0 bg-brand px-8 text-center text-white transition-all hover:bg-[#7c1f5f] md:px-16">
               Search
             </button>
           </div>
@@ -40,20 +40,20 @@ export default function Home() {
       </header>
 
       <section className="flex h-[70px] items-center bg-brand">
-        <div className="container flex justify-around">
-          <img src="/mbtoken.svg" alt="mbtoken" className="w-40" />
-          <img src="/metamask.svg" alt="mbtoken" className="w-40" />
-          <img src="/opensea.svg" alt="mbtoken" className="w-40" />
+        <div className="container flex flex-wrap justify-around">
+          <img src="/mbtoken.svg" alt="mbtoken" className="w-16 md:w-40" />
+          <img src="/metamask.svg" alt="mbtoken" className="w-16 md:w-40" />
+          <img src="/opensea.svg" alt="mbtoken" className="w-16 md:w-40" />
         </div>
       </section>
 
       <section className="py-20">
         <div className="container">
-          <h1 className="text-center text-5xl">
+          <h1 className="text-center text-3xl md:text-5xl">
             Inspiration for your next adventure
           </h1>
 
-          <div className="mt-11 grid grid-cols-4 gap-6">
+          <div className="mt-11 grid grid-cols-1 gap-6 md:grid-cols-4">
             <NftItem img={5} />
             <NftItem img={6} />
             <NftItem img={7} />
@@ -67,9 +67,9 @@ export default function Home() {
       </section>
 
       <section className="mt-20 grid min-h-[calc(100vh-200px)] bg-brand">
-        <div className="container grid grid-cols-2">
+        <div className="container grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="flex flex-col justify-center">
-            <h2 className="mb-[35px] text-[clamp(20px,5vw,48px)] font-bold leading-[60px] text-white">
+            <h2 className="text-[clamp(20px,5vw,48px)] font-bold leading-[60px] text-white md:mb-[35px]">
               Metabnb NFTs
             </h2>
 
@@ -81,7 +81,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center p-6 md:p-0">
             <img src="/bannr.webp" alt="banner" />
           </div>
         </div>
