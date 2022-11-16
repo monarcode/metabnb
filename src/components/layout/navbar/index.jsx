@@ -39,7 +39,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setShowModal(true)}
-            className="h-fit self-center rounded-md bg-brand py-3 px-6 text-white"
+            className="h-fit self-center rounded-[10px] bg-brand py-3 px-6 text-white"
           >
             Connect wallet
           </button>
