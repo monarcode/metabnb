@@ -1,7 +1,7 @@
 export default function Hamburger({ close, state }) {
   return (
     <>
-      <div className="self-center md:hidden">
+      <div className="self-center lg:hidden">
         <svg
           onClick={() => close(!state)}
           xmlns="http://www.w3.org/2000/svg"

@@ -40,7 +40,7 @@ function PlaceToStay() {
 
       {/* List of NFTs */}
       <section className="pb-28">
-        <div className="container grid grid-cols-1 gap-4 md:grid-cols-4">
+        <div className="container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {nftIDs.map((nft) => (
             <NftItem key={nft} img={nft} />
           ))}

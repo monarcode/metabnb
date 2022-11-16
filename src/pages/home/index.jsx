@@ -53,7 +53,7 @@ export default function Home() {
             Inspiration for your next adventure
           </h1>
 
-          <div className="mt-11 grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div className="mt-11 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <NftItem img={5} />
             <NftItem img={6} />
             <NftItem img={7} />

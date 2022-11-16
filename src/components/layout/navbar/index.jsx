@@ -24,7 +24,7 @@ const Navbar = () => {
           />
 
           {/* desktop nav links */}
-          <div className="hidden gap-10 py-6 md:flex md:flex-row">
+          <div className="hidden gap-10 py-6 md:flex-row lg:flex">
             {linkList.map((link) => (
               <NavLink
                 key={link.id}
@@ -56,7 +56,7 @@ const Navbar = () => {
                   x: "100vw",
                   opacity: 0,
                 }}
-                className="fixed inset-0 z-[99] mt-[120px] flex h-[calc(100vh-120px)] flex-col items-center gap-10 bg-white py-6 md:hidden"
+                className="fixed inset-0 z-[99] mt-[120px] flex h-[calc(100vh-120px)] flex-col items-center gap-10 bg-white py-6 lg:hidden"
               >
                 {linkList.map((link) => (
                   <NavLink
@@ -79,7 +79,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setShowModal(true)}
-            className="hidden h-fit self-center rounded-[10px] bg-brand py-3 px-6 text-white md:block"
+            className="hidden h-fit self-center rounded-[10px] bg-brand py-3 px-6 text-white lg:block"
           >
             Connect wallet
           </button>
