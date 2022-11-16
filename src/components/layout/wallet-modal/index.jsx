@@ -20,6 +20,7 @@ const modalAnim = {
   },
   exit: {
     opacity: 0,
+    // scale:
   },
 };
 
@@ -29,8 +30,8 @@ export default function WalletModal({ close }) {
       variants={backdrop}
       initial="initial"
       animate="animate"
-      exit="exit"
-      className="fixed inset-0 grid h-screen w-screen place-items-center bg-black/30 filter backdrop-blur-sm"
+      exit="initial"
+      className="fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black/30 filter backdrop-blur-sm"
     >
       <motion.div
         variants={modalAnim}
