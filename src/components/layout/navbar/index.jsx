@@ -83,6 +83,13 @@ const Navbar = () => {
           >
             Connect wallet
           </button>
+
+          <button
+            onClick={() => setShowModal(true)}
+            className="fixed bottom-5 right-5 z-50 grid h-20 w-20 place-items-center whitespace-nowrap rounded-full bg-brand text-sm text-white shadow-xl lg:hidden"
+          >
+            <img src="/wallet-icon.svg" alt="wallet" className="h-8 w-8" />
+          </button>
         </div>
       </nav>
     </>
