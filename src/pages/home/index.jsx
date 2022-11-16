@@ -66,8 +66,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-20 grid min-h-[calc(100vh-200px)] bg-brand">
-        <div className="container grid grid-cols-1 gap-6 md:grid-cols-2">
+      <section className="mt-20 grid min-h-screen bg-brand">
+        <div className="container grid grid-cols-1 gap-6 py-6 md:grid-cols-2">
           <div className="flex flex-col justify-center">
             <h2 className="text-[clamp(20px,5vw,48px)] font-bold leading-[60px] text-white md:mb-[35px]">
               Metabnb NFTs
