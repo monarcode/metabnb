@@ -54,14 +54,14 @@ export default function Home() {
           </h1>
 
           <div className="mt-11 grid grid-cols-4 gap-6">
-            <NftItem />
-            <NftItem />
-            <NftItem />
-            <NftItem />
-            <NftItem />
-            <NftItem />
-            <NftItem />
-            <NftItem />
+            <NftItem img={5} />
+            <NftItem img={6} />
+            <NftItem img={7} />
+            <NftItem img={8} />
+            <NftItem img={1} />
+            <NftItem img={2} />
+            <NftItem img={3} />
+            <NftItem img={4} />
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-export function NftItem() {
+export function NftItem({ img }) {
   return (
     <div className="relative flex h-[372px] flex-col rounded-[31px] border p-4 pb-5">
       <div className="group relative h-[265px] flex-shrink-0 overflow-hidden rounded-[15px]">
@@ -11,7 +11,7 @@ export function NftItem() {
 
         {/* nft image */}
         <img
-          src="/nfts/1.webp"
+          src={`/nfts/${img}.webp`}
           alt="nft"
           className="z-10 h-full w-full object-cover transition-all group-hover:scale-125"
         />
